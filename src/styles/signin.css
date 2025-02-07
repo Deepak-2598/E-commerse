@@ -1,0 +1,46 @@
+.app-container{
+    background-color: rgb(244, 247, 248);
+    /* background-color: rgb(255, 255, 255); */
+    margin-top: 200px;
+    border-radius: 10px;
+    width: 100%;
+    /* border-left: 100cap;
+    border-right: 100cap; */
+}
+
+input{
+    display: flex;
+    box-shadow: inset;
+    padding: 5px;
+    margin-top: 5px;
+    color: rgb(222, 166, 166);
+    border-color: rgb(249, 164, 60);
+    /* border-radius: 3px; */
+    align-self: center;
+    margin-left: 535px;
+    border: 10cap;
+}
+
+button{
+    margin-top: 7px;
+    text-align: center;
+    font-size: medium;
+    background-color: rgb(52, 105, 190);
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 0;
+    size: 5px;
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    background-color: rgb(219, 158, 3);
+    color: black;
+}
+
+/* span{
+    color: blue;
+    font-style: oblique;
+} */

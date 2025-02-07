@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Home from './Components/Home';
+import Signin from './Components/Signin';
+import './styles/signin.css';
 import './App.css';
+import Stopwatch from './Components/Stopwatch';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ChildContextApi from './Components/ContextApi';
+import ContextApi from './Components/ContextApi';
+import Practice from './Components/Practice';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Signin/>} />
+          <Route path='/home' element={<Home/>} />
+          <Route path='/stopwatch' element={<Stopwatch/>} />
+          {/* <Route path='/context' element={<ContextApi />} /> */}
+          <Route path='/context' element={<Practice />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

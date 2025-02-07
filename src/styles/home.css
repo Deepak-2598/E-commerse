@@ -1,0 +1,32 @@
+/* // @import "mixin"; */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+        /* // @include max-width(lg){
+        //     grid-template-columns: repeat(3, 1fr);
+        // } */
+}
+
+.card{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(204, 204, 204, 1);
+    /* transition: box-shadow, transform 0.5 ease; */
+    /* transform: scale(0.95); */
+    
+}
+.card:hover{
+    box-shadow: 0px 0px 5px 5px rgba(204, 204, 204, 1);
+    transform: scale(0.95); 
+}
+.card img{
+    width: 100%;
+    max-width: 50%;
+}
